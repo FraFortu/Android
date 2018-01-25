@@ -36,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
             int val = i;
             buttons[val].setOnClickListener(view -> {
                 toDisplay += buttons[val].getText();
+                display.setText(toDisplay);
             });
         }
         buttons[buttons.length - 1].setOnClickListener(view -> {
             toDisplay = toDisplay.substring(0,toDisplay.length() - 1);
+            display.setText(toDisplay);
         });
     }
 }
