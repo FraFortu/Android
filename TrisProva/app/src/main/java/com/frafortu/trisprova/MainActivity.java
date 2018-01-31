@@ -1,21 +1,25 @@
 package com.frafortu.trisprova;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TableLayout;
 import android.widget.Toast;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
+    private TableLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        layout = findViewById(R.id.layout);
         Button[][] buttons = new Button[3][3];
         int row = 0;
         int column = 0;
@@ -32,5 +36,10 @@ public class MainActivity extends AppCompatActivity {
         buttons[row][column] = findViewById(R.id.button8);
         TrisField tris = new TrisField(buttons,MainActivity.this);
         tris.play();
+        Button reset = new Button(this);
+        reset.setText("Start a new match");
+        reset.setGravity(2);
+        reset.setOnClickListener(event -> startActivity(new Intent(MainActivity.this,MainActivity.class)));
+        layout.addView(reset);
     }
 }
