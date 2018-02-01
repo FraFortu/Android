@@ -16,6 +16,7 @@
 
     <Button
         android:id="@+id/ok"
+        android:onClick="onClickListener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -31,16 +32,19 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number1"
                 android:layout_weight="1"
                 android:text="1"/>
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number2"
                 android:layout_weight="1"
                 android:text="2"/>
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number3"
                 android:layout_weight="1"
                 android:text="3"/>
@@ -51,16 +55,19 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number4"
                 android:layout_weight="1"
                 android:text="4"/>
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number5"
                 android:layout_weight="1"
                 android:text="5"/>
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number6"
                 android:layout_weight="1"
                 android:text="6"/>
@@ -71,16 +78,19 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number7"
                 android:layout_weight="1"
                 android:text="7"/>
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number8"
                 android:layout_weight="1"
                 android:text="8"/>
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number9"
                 android:layout_weight="1"
                 android:text="9"/>
@@ -91,6 +101,7 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/number0"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
@@ -101,6 +112,7 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:onClick="onClickListener"
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
