@@ -14,7 +14,8 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         password = findViewById(R.id.password);
-        String pw = getIntent().getStringExtra("password");
-        password.setText("Hai indovinato la password! : " + pw);
+        password.setText("");
+        int pw = getIntent().getIntExtra("password",1);
+        password.setText("Hai indovinato la password: " + pw);
     }
 }
