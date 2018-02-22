@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 x1 = event.getY();
                 break;
             case MotionEvent.ACTION_UP:
-                float deltaX = y2 - x1;
+                float deltaX = event.getY() - x1;
 
                 if (Math.abs(deltaX) > MIN_DISTANCE) {
                     // Left to Right swipe action
-                    if (y2 > x1) {
+                    if (deltaX > 0) {
                         changeFragment();
                     }
 
